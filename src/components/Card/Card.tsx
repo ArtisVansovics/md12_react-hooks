@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Card.scss';
 import Button from '../Button/Button';
 
 const Card = () => {
   const [count, setCount] = useState(0);
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    console.log('First Render');
+  }, []);
+  useEffect(() => {
+    console.log('Render');
+  });
+  useEffect(() => {
+    console.log('Changing count');
+  }, [count]);
+  useEffect(() => {
+    console.log('Input Change');
+  }, [inputValue]);
 
   const plusOne = () => {
     setCount(count + 1);
