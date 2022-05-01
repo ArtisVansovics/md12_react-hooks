@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 18px;
+  background-color: #0C4459;
+  border: 3px solid #F2B672;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.card__input {
+  background-color: #F4E9C8;
+  color: #031226;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+}
