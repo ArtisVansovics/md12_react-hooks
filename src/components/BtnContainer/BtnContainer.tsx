@@ -15,7 +15,8 @@ const BtnContainer = () => {
         tempDisabledBtnRef.current.disabled = false;
       }
     }, 5000);
-  });
+  }, []);
+
   const plusOne = () => {
     setCount(count + 1);
   };
