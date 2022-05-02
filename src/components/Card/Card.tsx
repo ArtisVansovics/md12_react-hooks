@@ -9,6 +9,7 @@ const Card = () => {
 
   useEffect(() => {
     console.log('First Render');
+
     setCount(100);
   }, []);
   useEffect(() => {
@@ -53,7 +54,7 @@ const Card = () => {
         {`Count: ${count}`}
       </p>
       <input
-        className="card__input"
+        className="input"
         type="text"
         placeholder="Write something here"
         value={inputValue}

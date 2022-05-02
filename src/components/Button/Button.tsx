@@ -3,7 +3,7 @@ import './Button.scss';
 
 type ButtonProps = {
   title: string
-  onClick: () => void
+  onClick?: () => void
 }
 
 const Button:FC<ButtonProps> = ({ title, onClick }) => (
