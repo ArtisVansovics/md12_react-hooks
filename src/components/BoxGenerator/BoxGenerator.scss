@@ -1,0 +1,33 @@
+.box-generator {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  font-size: 18px;
+  padding: 30px;
+}
+
+.box-generator__form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 32px;
+  background-color: #68B4BD;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.box-generator__container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.box-generator__select {
+  cursor: pointer;
+  background-color: #19687F;
+  border-radius: 5px;
+  border: none;
+  color: #F2B672;
+  padding: 10px;
+}

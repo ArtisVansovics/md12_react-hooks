@@ -34,6 +34,7 @@ const InputForm = () => {
           ref={inputRef}
           value={inputValue}
           onChange={inputUpdate}
+          required
         />
         <Button
           title="Submit"

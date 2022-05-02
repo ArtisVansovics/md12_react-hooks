@@ -3,6 +3,7 @@ import './App.scss';
 import Card from './components/Card/Card';
 import InputForm from './components/InputForm/InputForm';
 import BtnContainer from './components/BtnContainer/BtnContainer';
+import BoxGenerator from './components/BoxGenerator/BoxGenerator';
 
 const App = () => (
   <div className="App">
@@ -26,7 +27,9 @@ const App = () => (
           </div>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <div className="box" />
+          <div className="box">
+            <BoxGenerator />
+          </div>
         </div>
       </div>
     </div>
