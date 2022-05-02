@@ -4,10 +4,13 @@ import './Button.scss';
 type ButtonProps = {
   title: string
   onClick?: () => void
+  btnRef?: React.MutableRefObject<HTMLButtonElement | null>
 }
 
-const Button:FC<ButtonProps> = ({ title, onClick }) => (
-  <button className="button" onClick={onClick}>
+const Button:FC<ButtonProps> = ({
+  title, onClick, btnRef,
+}) => (
+  <button className="button" onClick={onClick} ref={btnRef}>
     {title}
   </button>
 );

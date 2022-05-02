@@ -2,7 +2,7 @@
   flex-flow: column;
   justify-content: center;
   align-content: center;
-  padding: 10px 15px;
+  padding: 10px 18px;
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
@@ -16,5 +16,10 @@
   &:hover {
     background-color: #031226;
     color: #F2D57E;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    pointer-events: none;
   }
 }
