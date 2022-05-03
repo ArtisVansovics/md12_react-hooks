@@ -9,12 +9,12 @@ const BtnContainer = () => {
   useEffect(() => {
     if (tempDisabledBtnRef.current) {
       tempDisabledBtnRef.current.disabled = true;
+      setTimeout(() => {
+        if (tempDisabledBtnRef.current) {
+          tempDisabledBtnRef.current.disabled = false;
+        }
+      }, 5000);
     }
-    setTimeout(() => {
-      if (tempDisabledBtnRef.current) {
-        tempDisabledBtnRef.current.disabled = false;
-      }
-    }, 5000);
   }, []);
 
   const plusOne = () => {
